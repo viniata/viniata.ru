@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СПО Тольятти - Тест: Какая профессия IT тебе подходит</title>
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        
+    <style>
+    /* #dee7ef      #dce5eb */
+        body {
+            margin:0px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .main {
+            background-color: #dce5eb;
+            width: 90%;
+            aheight: 100%;
+            awidth: 750px;
+            
+        }
+        td {
+            apadding: 20px 20px 20px 20px;
+        }
+        .question_div {
+            awidth: 100%;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            background-color: #dce5eb;
+            
+            amargin: 20px 0px 20px 0px;
+            padding: 20px 20px 20px 20px;
+
+        }
+        .answer_div {
+            border:1px solid #ffffff; 
+            border-radius: 16px; 
+            background-color: #ffffff;
+            awidth: 100%;
+            padding: 20px 20px 20px 20px;
+            margin: 20px 20px 20px 20px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+
+        }
+        .answer_div_cl {
+            border:1px solid #537089; 
+            border-radius: 16px; 
+            background-color: #b9c7d4;
+            awidth: 100%;
+            padding: 20px 20px 20px 20px;
+            margin: 20px 20px 20px 20px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+
+        }
+        
+        .answer_div_pic {
+            border:1px solid #ffffff; 
+            border-radius: 16px; 
+            background-color: #ffffff;
+            awidth: 100%;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+        }
+        .answer_div_pic_cl {border:1px solid #537089; 
+            border-radius: 16px; 
+            background-color: #b9c7d4;
+            awidth: 100%;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;}
+        
+        .knopka_css {
+            border:1px solid #537089; 
+            border-radius: 16px; 
+            background-color: #b9c7d4;
+            width: 70%;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            display: inline-block;
+            display: inline-block;
+
+        }
+        .div_kn {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+        
+        
+        .rslt_div {
+
+            
+            padding: 20px 20px 20px 20px;
+            margin: 20px 20px 20px 20px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            
+        }
+        
+        img {
+            border-radius: 6px;
+        }
+
+
+    </style>
+</head>
+<body bgcolor="#dce5eb">
+    
+<div class="site">
+
+    <div class="container">
+
+        <div class="header">
+            <a href="/"><p class="headertext">СПО Тольятти</p></a>
+        </div>
+        
+        <div>
+            <div class='question_div'>
+                Тест:<br />Какая профессия IT тебе подходит 
+            </div>
+        </div>
+        
+        <div>
+            <img src="img/test.png" class="cloud">
+        </div>
+        
+        <div class="ueban">
+
+
+                <span id="demo">
+                    
+                    <span id="demo"><div id="q_1" class="question_div">1. Вечер пятницы. Пришли друзья и предлагают посмотреть фильм. Ваша очередь выбирать. Что включите?</div><div id="q_1_a_1" id_q="1" id_a="1" value_q="1" class="answer_div">Конечно, «Властелина колец». Там потрясающий видеоряд и спецэффекты. Сейчас такое не снимают.</div><div id="q_1_a_2" id_q="1" id_a="2" value_q="2" class="answer_div">Без всяких сомнений — «Побег из Шоушенка». Вас вдохновляют люди, которые умеют быть последовательными и логичными.</div><div id="q_1_a_3" id_q="1" id_a="3" value_q="3" class="answer_div">«Эффект бабочки» — и точка. Всегда интересно, как одна ошибка может всё испортить.</div><div id="q_1_a_4" id_q="1" id_a="4" value_q="4" class="answer_div">Этот вечер — для «Восточного экспресса». Пусть Эркюль Пуаро собирает улики и делает вывод, кто же убийца.</div> <div id="q_2" class="question_div">2. Вы отправились на рынок купить абрикосы. Пришли, а там — фруктовые развалы, продавцы зазывают наперебой. Как будете выбирать?</div><div id="q_2_a_1" id_q="2" id_a="1" value_q="4" class="answer_div">Обойдете всех и оцените, где меньше испорченных фруктов, какой продавец самый дружелюбный, у кого ниже цена. Найдете лучший вариант. </div><div id="q_2_a_2" id_q="2" id_a="2" value_q="2" class="answer_div">У вас есть план. Зададите первому продавцу три вопроса: откуда абрикосы, какой сорт, сладкие ли. Если продавец не сможет ответить хотя бы на один, перейдете к следующей палатке.</div><div id="q_2_a_3" id_q="2" id_a="3" value_q="3" class="answer_div">Вы тщательно готовились. Прочитали статью о выборе фруктов, скачали чек-лист. Выберете по нему.</div><div id="q_2_a_4" id_q="2" id_a="4" value_q="1" class="answer_div">Купите у продавца, который выложил абрикосы без вмятин в ровные красивые горки. </div> <div id="q_3" class="question_div">3. Коллеги позвали на костюмированную вечеринку. Вам достался костюм Халка. Как будете готовиться? </div><div id="q_3_a_1" id_q="3" id_a="1" value_q="4" class="answer_div">Просмотрите фото с того года, поймете, что в прошлый раз на вечеринке было аж четыре Халка. Чтобы не сливаться с толпой, нарядитесь Зеленым Фонарем.</div><div id="q_3_a_2" id_q="3" id_a="2" value_q="2" class="answer_div">Посмотрите видео «Шитье для начинающих». Найдете выкройку костюма Человека-паука. Придумаете, как ее перестроить, раскроите ткань и сами всё сделаете. </div><div id="q_3_a_3" id_q="3" id_a="3" value_q="1" class="answer_div">Соберете в интернете картинки с Халком. Отнесете их портнихе и попросите из каждого взять по чуть-чуть, чтобы получить костюм из ряда вон.</div><div id="q_3_a_4" id_q="3" id_a="4" value_q="3" class="answer_div">Объедете все прокаты города и перемерите все костюмы Халков. Если не сядут, будете подробно объяснять продавцам, что не так с их ассортиментом.</div> <div id="q_4" class="question_div">4. Ниже — популярные герои кинофильмов. Кто вам наиболее симпатичен?</div><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><div id="q_4_a_1" id_q="4" id_a="1" value_q="4" class="answer_div_pic"><img style="width:100%;" src="img/pic_4_1.png"></div></td><td><div id="q_4_a_2" id_q="4" id_a="2" value_q="2" class="answer_div_pic"><img style="width:100%;" src="img/pic_4_2.png"></div></td><td></td></tr><tr><td><div id="q_4_a_3" id_q="4" id_a="3" value_q="3" class="answer_div_pic"><img style="width:100%;" src="img/pic_4_3.png"></div></td><td><div id="q_4_a_4" id_q="4" id_a="4" value_q="1" class="answer_div_pic"><img style="width:100%;" src="img/pic_4_4.png"></div></td><td></td></tr></tbody></table> <div id="q_5" class="question_div">5. Целый день бушевала гроза, а к вечеру отключили свет. Наверное, авария. Ваши действия:</div><div id="q_5_a_1" id_q="5" id_a="1" value_q="3" class="answer_div">Тут же позвоните в жилищный комитет и будете выяснять, кто виноват и когда исправят неполадки.</div><div id="q_5_a_2" id_q="5" id_a="2" value_q="4" class="answer_div">Вы еще во время грозы пришли к выводу, что отключат свет. Подготовили свечи, фонарик и перекус</div><div id="q_5_a_3" id_q="5" id_a="3" value_q="1" class="answer_div">Лишний повод устроить романтику: зажжете свечи, нальете бокал вина, будете наслаждаться вечером.</div><div id="q_5_a_4" id_q="5" id_a="4" value_q="2" class="answer_div">Не так давно вы смотрели ролик в интернете, как сделать свечи из подручных средств. Пришло время применить знания на практике.</div> <div id="q_6" class="question_div">6. У вас скоро день рождения. Какой лучший способ отметить? </div><div id="q_6_a_1" id_q="6" id_a="1" value_q="4" class="answer_div">Отгадывать загадки в квеструме </div><div id="q_6_a_2" id_q="6" id_a="2" value_q="1" class="answer_div">Заниматься творчеством на арт-вечеринке </div><div id="q_6_a_3" id_q="6" id_a="3" value_q="2" class="answer_div">Победить во всех настольных играх в арт-кафе по заранее намеченному плану </div><div id="q_6_a_4" id_q="6" id_a="4" value_q="3" class="answer_div"> Проходить шаг за шагом препятствия канатного парка </div> <div id="q_7" class="question_div">7. Вы вышли из дома на работу и вспомнили, что кое-что забыли. За чем вернетесь обязательно? </div><div id="q_7_a_1" id_q="7" id_a="1" value_q="1" class="answer_div">Расческа. Прическа — зеркало души человека.</div><div id="q_7_a_2" id_q="7" id_a="2" value_q="2" class="answer_div">Наушники. У вас на смартфоне новый аудиокурс, вы хотели послушать его по дороге. </div><div id="q_7_a_3" id_q="7" id_a="3" value_q="3" class="answer_div">Кошелек. Покупок не планировали, но мало ли что. </div><div id="q_7_a_4" id_q="7" id_a="4" value_q="4" class="answer_div">Ежедневник. Там вся ваша жизнь: от номеров телефонов коллег до списка, что купить в магазине после работы.</div> <div id="q_8" class="question_div">8. Впереди — долгожданный отпуск. Вы заходите на сайт туроператора и выбираете путешествие мечты:</div><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><div id="q_8_a_1" id_q="8" id_a="1" value_q="1" class="answer_div_pic"><img style="width:100%;" src="img/pic_8_1.png"></div></td><td><div id="q_8_a_2" id_q="8" id_a="2" value_q="3" class="answer_div_pic"><img style="width:100%;" src="img/pic_8_2.png"></div></td><td></td></tr><tr><td><div id="q_8_a_3" id_q="8" id_a="3" value_q="2" class="answer_div_pic"><img style="width:100%;" src="img/pic_8_3.png"></div></td><td><div id="q_8_a_4" id_q="8" id_a="4" value_q="4" class="answer_div_pic"><img style="width:100%;" src="img/pic_8_4.png"></div></td><td></td></tr></tbody></table> <div id="q_9" class="question_div">9. Случилась неприятность: вы шли на работу, а проезжающий мимо автомобиль окатил вас из лужи. На вас светлые джинсы и рубашка. Как поступите?</div><div id="q_9_a_1" id_q="9" id_a="1" value_q="1" class="answer_div">Это ужас! Надо вернуться домой и привести себя в порядок. </div><div id="q_9_a_2" id_q="9" id_a="2" value_q="4" class="answer_div">Оцените ущерб. Если всё не так страшно, зайдете в ближайшее кафе, чтобы очиститься. Если всё критично, вернетесь домой и переоденетесь. </div><div id="q_9_a_3" id_q="9" id_a="3" value_q="3" class="answer_div">Пойдете на работу так. Неприятности случаются с каждым.</div><div id="q_9_a_4" id_q="9" id_a="4" value_q="2" class="answer_div">Позвоните начальнику, всё объясните и попросите поработать из дома. Это самое логичное в данной ситуации.</div> <div id="q_10" class="question_div">10. Вы позвали друзей в гости. Надо приготовить угощение. Что это будет?</div><div id="q_10_a_1" id_q="10" id_a="1" value_q="3" class="answer_div">Проверенный рецепт, чтобы не накосячить. Например, крабовый салат или фаршированные рулетики из ветчины. </div><div id="q_10_a_2" id_q="10" id_a="2" value_q="1" class="answer_div">Что-то необычное, чтобы гости ахнули: крокембуш, димсамы или карпаччо из оленины.</div><div id="q_10_a_3" id_q="10" id_a="3" value_q="2" class="answer_div_cl">Блюдо по рецепту из интернета. Какое — не важно, главное, чтобы рецепт был подробный, с пояснениями, схемами и картинками. Тогда всё получится. </div><div id="q_10_a_4" id_q="10" id_a="4" value_q="4" class="answer_div">Спросите друзей, какую кухню они предпочитают, у кого на что аллергия. Составите сводную таблицу — только потом выберете то, что устроит всех.  </div> </span>
+                    
+                </span>
+                
+
+                <br />
+                <div id="knopka" class="div_kn">
+                    <span style="display: inline-block; width:20%;">&nbsp;</span>
+                    <span class="knopka_css" onclick="f_cl_res()" >Узнать результат</span>
+                    <span style="display: inline-block; width:20%;">&nbsp;</span>
+                </div> 
+                
+                <br />
+                
+                <span>
+                    <div id="rslt" class="rslt_div"></div>
+                </span>
+                
+                <br /><br />
+            
+
+        </div>
+        
+        
+        
+        
+    </div>
+</div>
+
+<div class="footer">
+                <div class="blocktextfooter">
+                    <a href="/"><p class="footernormaltext">CПО Тольятти</p></a>
+                    <br />
+                    <p class="footerbigtext">IT-Технологии</p></a>
+                </div>
+
+                <table class="table" >
+                    <tr>
+                        <td><p class="tabletext"><a href="mobdev">Мобильная Разработка</a></p></td>
+                        <td><p class="tabletext"><a href="cloudeng">Облачные Технологии</a></p></td>
+                        <td><p class="tabletext"><a href="imarket">Интерент Маркентинг</a></p></td>
+                        <td><p class="tabletext"><a href="seoopt">SEO Оптимизация</a></p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p class="tabletext"><a href="gamedev">GAME Dev(Unity)</a></p></td>
+                        <td><p class="tabletext"><a href="vrar">VR/AR Разработка</a></p></td>
+                        <td><p class="tabletext"><a href="3dmodel">3D Моделирование</a></p></td>
+                        <td><p class="tabletext"><a href="tester">Тестировщик</a></p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p class="tabletext"><a href="frontend">FrontEnd Разработка</a></p></td>
+                        <td><p class="tabletext"><a href="backend">BackEnd Разработка</a></p></td>
+                        <td><p class="tabletext"><a href="dbms">СУБД</a></p></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><p class="tabletext"><a href="blockchain">Block Chain</a></p></td>
+                        <td><p class="tabletext"><a href="webdesign">Веб-дизайнер</a></p></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+        
+            
+    </div>
+        <script>
+            
+           
+                        
+            var mas_res = 0
+            $(".answer_div").click(function() {
+                var atrr_1 = $(this).attr('id_q');
+                q_val[atrr_1] = $(this).attr('value_q');
+                f_chk_asw(this)
+                f_all_sum()
+            });
+            
+            $(".answer_div_pic").click(function() {
+                var atrr_1 = $(this).attr('id_q');
+                q_val[atrr_1] = $(this).attr('value_q');
+                f_chk_asw_pic(this)
+                f_all_sum()
+            });
+
+            var old_q; // answer_div answer_div_cl
+            function f_chk_asw(obj) {
+                var old_q = $(obj).attr('id_q')
+                $('[id_q="'+old_q+'"]').prop('className', 'answer_div');
+                $(obj).prop('className', 'answer_div_cl')
+
+            }
+            
+            var old_q_pic; // answer_div answer_div_cl
+            function f_chk_asw_pic(obj) {
+                var old_q_pic = $(obj).attr('id_q')
+                $('[id_q="'+old_q_pic+'"]').prop('className', 'answer_div_pic');
+                $(obj).prop('className', 'answer_div_pic_cl')
+
+            }
+            
+            var sum_arr = 0
+            function f_all_sum() {
+                sum_arr = 0, sum_arr_i = 0;
+                for(i=1; i<11; i++) {
+                    sum_arr_i = parseInt(q_val[i]);
+                    sum_arr = sum_arr + sum_arr_i
+                }
+                console.log(" sum_arr = " + sum_arr)
+                f_result(sum_arr)
+            }
+
+            var result_txt = "&nbsp;&nbsp;&nbsp;Сразу видно — вы опытный юзер сети интренет.<br>"
+                    + "Скорее всего, вы очень ответственный пользователь, и вас не проведешь"
+                    + "и вас точно сложный пароль, который не так просто взломать )))<br>"
+                    + "<br>Пройдите тест узнайте кем вам будет интесней всего работать<br>";
+                    
+            function f_result(num) {
+                var result = "";
+                
+                var txt_0 = "Сразу видно — вы опытный юзер сети интренет."
+                    + "Скорее всего, вы очень ответственный пользователь, и вас не проведешь."
+                    + "и вас точно сложный пароль, который не так просто взломать )))"
+                
+                var txt_1 = "Веб-дизайнер <br>"
+                    + "Чем занимается. <br>Отрисовывает сайты, приложения, сервисы и другие программы, чтобы нам хотелось пользоваться ими. Если бы не дизайнер, сайты бы состояли не из аккуратно оформленных блоков, а из скучных схем и черного текста."
+                    + "<br>Этот специалист рисует в графических редакторах, разбирается в трендах. Знает, как сделать продукт не только красивым, но и удобным."
+                    + "<br>Если хотите научиться делать сайты, рекламные баннеры и интерфейсы, пройдите курс «Веб-дизайнер». "
+                    + "<br>Освойте программы Figma, Photoshop, Tilda, Readymag. "
+                ;
+                var txt_2 = "Разработчик <br>"  
+                 + "Чем занимается. <br>Задачи зависят от направления, в разработке их несколько. "
+                 + "<br>Frontend-разработчик отвечает за видимую часть сайта или приложения: блоки, окна и элементы. Пишет код, который описывает цвета, шрифты, расположение графических элементов и прочее. "
+                 + "<br>Backend-разработчик работает над внутренними процессами. Делает так, чтобы вы могли отправить заявку, скачать файлы, зарегистрироваться. "
+                 + "<br>Еще есть fullstack-разработчик: он выполняет задачи обоих специалистов по frontend- и backend-части."
+                 + "<br>Разработчиков делят и по языкам программирования: одни кодят, к примеру, на Python, другие — на Java."
+                 + "<br>Формально можно разделить разработчиков так:<br>"
+                   + "«Веб-разработчик» — научитесь создавать и поддерживать видимую для пользователя часть сайта, оживлять детали страниц. А еще создавать порталы, виджеты, интернет-магазины. "
+                   + "<br>«Android-разработчик» — сможете продумывать интерфейс, работать над дизайном и тестировать готовые приложения. Узнаете, как программировать на Java и Kotlin, и сделаете четыре проекта."
+                   + "<br>«Python-разработчик» — научитесь писать чистый и стабильный код на популярном языке программирования. Делать авторизацию, оплату, комментарии, фильтрацию, писать серверы для магазина, приложения или игры. "
+                   + "<br>«Java-разработчик» — освоите язык, благодаря которому работают сервисы «Яндекса», «Сбербанка» и других компаний. Напишете бота для телеграма, научитесь писать запросы, решать задачи на многопоточность и коллекции. "
+                ;
+                var txt_3 = "Инженер по тестированию<br>"
+                 + "Чем занимается. <br>Тестировщик проверяет, правильно ли работают программы, сайты и приложения. Если бы не он, везде было бы много ошибок: всё работало бы кое-как или не работало вообще."
+                 + "<br>Тестировщик находит проблемы, заносит их в отчет и передает разработчикам, чтобы те всё устранили. Затем проверяет снова, и так — пока не будет идеально. Он внимателен к деталям, усидчив, умеет искать ошибки во всём."
+                 + "<br>Узнаете, как вычислять, что конкретно в логике написания не так, почему код не сработал, освоите инструменты для тестирования веб- и мобильных приложений и API. "
+                ;
+                var txt_4 = "Аналитик данных<br>"
+                + "Чем занимается. <br>Это настоящий мегамозг любой компании. Он собирает данные, тщательно их анализирует и находит закономерности: почему всё так, а не иначе."
+                + "<br>Этот специалист дотошен, логичен и последователен, не торопится с выводами. У него широкий кругозор и системное мышление."
+                + "<br>Узнаете, как работать с Excel, SQL, языком программирования Python, статистикой. Аналитики данных работают в «Сбере», «Киномаксе», World Class и других крупных компаниях. "
+                ;
+
+                    if (num == 0) {
+                        result = txt_0
+                    } 
+                    
+                    if (num <= 17) {
+                        result = txt_1
+                    } 
+
+                    if (num > 17 && num <= 24) {
+                        result = txt_2
+                    }  
+
+                    if (num > 24 && num <= 33) {
+                        result = txt_3
+                    }            
+
+                    if (num > 33) {
+                        result = txt_4
+                    }   
+                    result_txt = result
+                    
+                    //document.getElementById("rslt").innerHTML = result;
+            }
+            
+            function f_cl_res() {
+                var rslt = document.getElementById("rslt")
+                rslt.innerHTML = result_txt;
+                rslt.style.color = "#010102";
+                
+                rslt.style.transitionDelay = '.3s';
+            }
+                
+ 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+                    
+        
+        
+        
+
+    </body>
+</html>

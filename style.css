@@ -6,7 +6,7 @@
 }
 
 a {
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -15,6 +15,7 @@ a {
     padding-top: 20px;
     background: #D4DDE5;
     box-shadow: -4px -4px 50px #D4DDE5;   
+    background-color: #21272e;
 }
 
 .header div span{
@@ -31,7 +32,7 @@ a {
 }
 
 main {
-    background-image: url(/image/fon.png);
+    background-image: url(/image/fon_dark.jpg);
     background-size: cover;
     padding-bottom: 41px;
 }
@@ -53,6 +54,8 @@ main div span {
     column-gap: 100px;
     row-gap: 50px;
     justify-content: flex-start;
+    color: #ffffff;
+ 
 }
 
 .block:last-child{
@@ -102,7 +105,8 @@ main div span {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #D4DDE5;
+    background-color: #21272e;
+    color: #ffffff;
 }
 
 footer span {
